@@ -12,5 +12,5 @@ This project is an e-commerce webpage, made with the help of a fake api, which c
 
 Clone the repository:
    ```bash
-   git clone https://github.com/SaddiVamshidharReddy/GDGC/edit/main/README.md
+   git clone https://github.com/SaddiVamshidharReddy/GDGC.git
    cd GDGC
