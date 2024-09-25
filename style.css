@@ -169,11 +169,12 @@ h2 {
 .product {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     border-radius: 40px;
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
     align-items: center;
-    margin: 20px 80px;
+    margin: 20px 60px;
 }
 
 .cartImg {
@@ -234,6 +235,7 @@ h5 {
 
 .details {
     width: 260px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
