@@ -1,38 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-nav{
-    background-color: #929292;
-    display: grid;
-    grid-template-columns: 0.05fr 1fr;
-    padding: 5px;
-}
-nav img{
-    width: 50px;
-    margin-left: 20px;
-}
 
-.list{
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.list a{
-    text-decoration: none;
-    color: white;
-
+.navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
 }
-body{
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+body {
     background-color: #000000;
     height: 100%;
+    width: 100%;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -40,10 +55,12 @@ body{
     flex-wrap: wrap;
     align-items: baseline;
 }
-.card{
+
+.card {
     margin-top: 100px;
-    width: 300px;
-    height: 450px;
+    /* max-width: 300px;
+    width: 100%;
+    max-height: 450px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,14 +68,16 @@ body{
     background-color: #ffffff;
     margin-bottom: 50px;
 }
-.flex img{
+
+.flex img {
     /* width: 100%; */
     height: 200px;
     margin-top: 15px;
     background-color: #F6F6F6;
     /* object-fit: cover; */
 }
-.data{
+
+.data {
     display: flex;
     flex-direction: column;
     width: 340px;
@@ -67,25 +86,28 @@ body{
     flex-wrap: wrap;
     text-align: center;
 }
-.flex a{
+
+.flex a {
     text-decoration: none;
     background-color: #000080;
     color: white;
     padding: 10px 20px;
     margin: 20px;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.name{
+
+.name {
     color: #9E3500;
     height: 45px;
     font-size: 1.2rem;
     margin-top: 2.5px;
 }
 
-.gender{
-    margin-top: 5px ;
+.gender {
+    margin-top: 5px;
     font-size: 1.1rem;
     color: #929292;
 }
@@ -96,12 +118,12 @@ ul{
     font-size: 1rem;
 } */
 
-.price{
+.price {
     font-size: 1.2rem;
-    font-weight:400;
+    font-weight: 400;
 }
 
-.cart{
+.cart {
     font-size: 1rem;
     margin-top: 15px;
     padding: 10px 84.75px;
@@ -109,10 +131,12 @@ ul{
     border: none;
     background-color: #929292;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
 }
-.favourite{
+
+.favourite {
     font-size: 1rem;
     margin: 5px 0 15px;
     padding: 10px 92.262px;
@@ -122,24 +146,27 @@ button:hover{
     color: #F6F6F6;
 }
 
-.addCart{
+.addCart {
     background-color: #929292;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-hr{
+
+hr {
     margin: 20px 0 0;
     height: 20px;
     color: white;
     background-color: #fff;
 }
-h2{
+
+h2 {
     /* margin-top: 50px; */
     padding: 20px 50px;
     color: white;
     background-color: #929292;
 }
-.product{
+
+.product {
     padding: 20px;
     display: flex;
     border-radius: 40px;
@@ -149,24 +176,26 @@ h2{
     margin: 20px 80px;
 }
 
-.cartImg{
+.cartImg {
     /* width: 80px; */
     height: 80px;
     border-radius: 20px;
 }
 
-.priceDetails{
+.priceDetails {
     text-align: center;
     margin: 20px 100px;
     background-color: #ffffff;
     border-radius: 40px;
 }
-.TotalAmount{
+
+.TotalAmount {
     display: flex;
     justify-content: space-between;
     margin: 20px 20px;
 }
-.Order{
+
+.Order {
     margin-bottom: 20px;
     background-color: #000;
     color: #fff;
@@ -174,36 +203,57 @@ h2{
     border-radius: 10px;
 }
 
-.product_name{
+.product_name {
     padding: 10px 0;
 }
-.addbtn{
+
+.addbtn {
     background-color: #000;
     color: #fff;
     padding: 5px 10px;
     border-radius: 10px;
 }
 
-.add{
+.add {
     padding: 2px;
     border: none;
     background-color: #000;
     color: #fff;
 }
 
-.sub{
+.sub {
     padding: 2px 4px;
     border: none;
     background-color: #000;
     color: #fff;
 }
-h5{
+
+h5 {
     margin-top: 10px;
 }
 
-.details{
+.details {
     width: 260px;
 }
 
+@media (max-width: 768px) {
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .navbar-logo{
+        display: none;
+    }
+    .navbar-menu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 
-
+    .navbar-item {
+        margin: 10px 0;
+    }
+    .addCart {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
