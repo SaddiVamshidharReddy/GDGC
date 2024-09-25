@@ -190,6 +190,7 @@ hr {
     padding: 20px;
     width: 600px;
     display: flex;
+    flex-wrap: wrap;
     border-radius: 40px;
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
@@ -314,10 +315,11 @@ h5 {
     }
     .product{
         margin: 10px 10px;
-        
     }
     .priceDetails{
         margin: 0 10px;
         max-height: 300px;
     }
+
 }
+
