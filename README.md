@@ -1,16 +1,19 @@
-# E-Commerce Webpage
+## E-Commerce Webpage
 
-This project is an e-commerce webpage, made with the help of a fake api, which consists of various products such as backpacks, t-shirts, and jackets. Users can add items to their cart.
+This project is an e-commerce webpage, created with the help of a fake API. It features various products such as backpacks, t-shirts, and jackets. Users can add items to their cart.
 
-## Features
+## Features:
 
-- Display a list of products with images, prices, and categories.
-- Add products to the shopping cart.
-- Responsive design for better user experience on different devices.
+- Displays a list of products with images, prices, and categories.
+- Allows users to add products to the shopping cart.
+- Responsive design for a better user experience on different devices.
+  
 
-![Screenshot 2024-09-25 054849](https://github.com/user-attachments/assets/5779564a-10bc-4bc2-beed-4606bfe25d11)
+![Screenshot 2024-09-25 054849](https://github.com/user-attachments/assets/755c7804-3ca0-4509-a420-67132fb8612a)
 
-![Screenshot 2024-09-25 054148](https://github.com/user-attachments/assets/27939bfd-7965-4de8-a68b-8fbdc2c02c57)
+![Screenshot 2024-09-25 054148](https://github.com/user-attachments/assets/2d1c86e4-1240-4df9-b997-9aa89c9a667c)
+
+
 
 ## Installation
 
