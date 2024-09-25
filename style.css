@@ -169,6 +169,7 @@ h2 {
 .product {
     padding: 20px;
     display: flex;
+    flex-wrap:wrap;
     border-radius: 40px;
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
