@@ -258,4 +258,12 @@ h5 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    .product{
+        margin: 10px 10px;
+        
+    }
+    .priceDetails{
+        margin: 0 10px;
+        max-height: 300px;
+    }
 }
